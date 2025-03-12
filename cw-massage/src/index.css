@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Styling */
+body {
+  @apply bg-[var(--soft-gray)] text-[var(--charcoal)];
+}
+
+/* Primary Brand Colors */
+:root {
+  --primary-turquoise: #2AB7CA;
+  --deep-teal: #0E4A5A;
+  --soft-gray: #F5F5F5;
+  --charcoal: #333333;
+  --warm-beige: #EAE0D5;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-[var(--primary-turquoise)] text-white px-6 py-2 rounded-lg hover:bg-[var(--deep-teal)] transition;
+}
+
+.btn-outline {
+  @apply border-2 border-[var(--primary-turquoise)] text-[var(--primary-turquoise)] px-6 py-2 rounded-lg hover:bg-[var(--primary-turquoise)] hover:text-white transition;
+}
